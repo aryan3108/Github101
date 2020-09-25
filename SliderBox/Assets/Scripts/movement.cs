@@ -4,25 +4,15 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-	private float speed = 2.0f;
-	public float velocity = 1500f;
-	public GameObject character;
+	public Rigidbody rb;
+	public float forceforward = 1500f, forceSideway = 1200f;
+
 	void FixedUpdate()
     {
-		character.GetComponent<Rigidbody>().AddForce(0, 0, velocity * Time.deltaTime);
-    }
-	void Update()
-	{
+		rb.AddForce(0, 0, forceforward * Time.deltaTime);
 
-		if (Input.GetKey(KeyCode.RightArrow))
-		{
-			transform.position += Vector3.right * speed * Time.deltaTime;
-		}
-		if (Input.GetKey(KeyCode.LeftArrow))
-		{
-			transform.position += Vector3.left * speed * Time.deltaTime;
-		}
-		
-	}
+		if()
+    }
+
 
 }
