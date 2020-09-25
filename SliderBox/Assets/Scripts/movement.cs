@@ -5,10 +5,11 @@ using UnityEngine;
 public class movement : MonoBehaviour
 {
 	private float speed = 2.0f;
+	public float velocity = 1500f;
 	public GameObject character;
 	void FixedUpdate()
     {
-		
+		character.GetComponent<Rigidbody>().AddForce(0, 0, velocity * Time.deltaTime);
     }
 	void Update()
 	{
