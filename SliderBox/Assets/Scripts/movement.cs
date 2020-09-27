@@ -10,7 +10,15 @@ public class movement : MonoBehaviour
 	void FixedUpdate()
     {
 		rb.AddForce(0, 0, -forceforward * Time.deltaTime);
-    }
+		if(Input.GetKey("d"))
+        {
+			rb.AddForce(forceSideway * Time.deltaTime, 0, 0);
+        }
+		if (Input.GetKey("a"))
+		{
+			rb.AddForce(-forceSideway * Time.deltaTime, 0, 0);
+		}
+	}
 
 
 }
