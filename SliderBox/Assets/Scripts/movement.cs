@@ -9,9 +9,7 @@ public class movement : MonoBehaviour
 
 	void FixedUpdate()
     {
-		rb.AddForce(0, 0, forceforward * Time.deltaTime);
-
-		if()
+		rb.AddForce(0, 0, -forceforward * Time.deltaTime);
     }
 
 

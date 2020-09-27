@@ -311,7 +311,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e84df6d13518445a4a3dbeadd60640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 334455068}
+  rb: {fileID: 334455073}
+  forceforward: 1500
+  forceSideway: 1200
 --- !u!1 &607291069
 GameObject:
   m_ObjectHideFlags: 3
@@ -674,7 +676,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -23.006}
+  m_LocalEulerAnglesHint: {x: 6.9030004, y: 162.677, z: -2.118}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
