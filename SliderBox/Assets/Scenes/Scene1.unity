@@ -748,7 +748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 334455073}
-  forceforward: 1200
+  forceforward: 1000
   forceSideway: 350
 --- !u!1 &454896807
 GameObject:
