@@ -19,8 +19,6 @@ public class movement : MonoBehaviour
         {
 			rb.AddForce(-forceSideway * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
-		if(forceforward<1500)
-			forceforward++;
 		
 	}
 
