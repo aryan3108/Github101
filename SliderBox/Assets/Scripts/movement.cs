@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Threading;
+using UnityEngine;
 
 public class movement : MonoBehaviour
 {
@@ -8,15 +11,17 @@ public class movement : MonoBehaviour
 	void FixedUpdate()
     {
 		rb.AddForce(0, 0, -forceforward * Time.deltaTime);
-		if(Input.GetKey("d")|Input.GetKey("right"))
-        {
-			rb.AddForce(-forceSideway * Time.deltaTime, 0, 0);
-        }
-		if(Input.GetKey("a")|Input.GetKey("left"))
+		if(Input.GetKey("a"))
 		{
 			rb.AddForce(forceSideway * Time.deltaTime, 0, 0);
 		}
-		forceforward++;
+		if(Input.GetKey("d"))
+        {
+			rb.AddForce(-forceSideway * Time.deltaTime, 0, 0);
+        }
+		if(forceforward<1500)
+			forceforward++;
+		
 	}
 
 
