@@ -8,11 +8,11 @@ public class movement : MonoBehaviour
 	void FixedUpdate()
     {
 		rb.AddForce(0, 0, -forceforward * Time.deltaTime);
-		if(Input.GetKeyA)
+		if(Input.GetKey("a"))
 		{
 			rb.AddForce(forceSideway * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
 		}
-		if(Input.GetKeyD)
+		if(Input.GetKey("d"))
         {
 			rb.AddForce(-forceSideway * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }	
